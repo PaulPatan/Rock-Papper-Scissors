@@ -33,6 +33,7 @@ function game() {
     scissorsBtn.textContent = 'Scissors';
     const div = document.createElement('div');
     const scoreDiv = document.createElement('div');
+
     const lineBreak = document.createElement('br');
 
     let playerScore = 0;
@@ -84,7 +85,6 @@ function game() {
         } else if (computerScore === 5) {
           div.textContent += ' - Computer wins the game!';
           gameOver = true;
-
         }
       }
     document.body.appendChild(div);
@@ -93,6 +93,7 @@ function game() {
     document.body.appendChild(paperBtn);
     document.body.appendChild(scissorsBtn);
     document.body.appendChild(scoreDiv);
+
 }
 
 game();
